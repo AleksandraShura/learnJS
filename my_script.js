@@ -27,24 +27,22 @@ button1.addEventListener("click", () => {
     }
 })
 
+// function evenNumbers(array) {
+//     let cacheArray = []
+//     for (let el of array) {
+//         if (el % 2 == 0) {
+//         cacheArray.push(el)    
+//         } 
+//     }
+//     return cacheArray
+// }
+
 function evenNumbers(array) {
-    let cacheArray = []
-    for (let el of array) {
-        if (el % 2 == 0) {
-        cacheArray.push(el)    
-        } 
-    }
-    return cacheArray
+    return array.filter(element => element % 2 == 0)
 }
 
 function oddNumbers(array) {
-    let cacheArray = []
-    for (let el of array) {
-        if (el % 2 != 0) {
-        cacheArray.push(el)    
-        } 
-    }
-    return cacheArray
+    return array.filter(element => element % 2 != 0)
 }
 
 function print(message) {
