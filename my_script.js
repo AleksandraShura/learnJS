@@ -42,4 +42,30 @@ function print(message) {
 // function stringsToArray(strings, separator) {
 //     return strings.split(separator)
 // }
-ghghghgh
+// ---------------------------------------------------------------
+let arrayTest1 = [2, 6, 392, 44, 29, 23.6, 22, 10, 7, 2109, -2]
+
+// Метод every проверяет содержимое массива на условие лямбды 
+// и возвращает булиан значение
+
+// let isNumberSmall = (value) => value < 10
+
+// print(`${arrayTest1.every(isNumberSmall)}`)
+
+// ---------------------------------------------------------------
+// Метод concat - обединяет два массива в один, не изменяя существующие массивы
+
+// let arrayTest2 = [ 3, 4, 6, 7, 11, 998, 2.35, 11, 22, -54]
+
+// let arrayTest3 = arrayTest1.concat(arrayTest2)
+// ---------------------------------------------------------------
+// Метод sort - сортирует массив в порядке возростания
+// arrayTest3.sort((a, b) => a - b)
+
+// print(arrayTest3)
+
+// ---------------------------------------------------------------
+// Метод filter - создает новый отфильтрованный массив
+
+let resultArray = arrayTest1.filter(value => value < 100)
+print(resultArray)
