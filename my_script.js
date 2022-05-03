@@ -29,10 +29,12 @@
 // }
 // console.log(betterThanAverage([2, 4, 6, 7], 7))
 
+
 // function makeUpperCase(str) {
 //     return str.toUpperCase()
 // }
 // console.log(makeUpperCase("привет"))
+
 
 // function bmi(weight, height) {
 //     let bmi = weight / (height * height)
@@ -48,3 +50,48 @@
 //     }   
 // }
 // console.log(bmi(71, 1.74))
+
+
+// function even_or_odd(number) {
+//     return number % 2 === 0 ? "Even" : "Odd"
+// }
+// console.log(even_or_odd(12))
+
+
+// function lovefunc(flower1, flower2) {
+//     let fl1 = flower1 % 2 === 0
+//     let fl2 = flower2 % 2 === 0    
+//     let a = true
+//     if((fl1 == true && fl2 == true) || ((fl1 == false && fl2 == false))) {
+//         a = false
+//     }
+//     return a
+//   }
+//   console.log(lovefunc(0, 0))
+
+
+// function abbrevName(name){
+//     let nameSplit = name.split(' ')
+
+//     let nameSlice1 = nameSplit.slice(0).toLocaleString().charAt(0)
+    
+//     let nameSlice2 = nameSplit.slice(1).toLocaleString().charAt(0)
+    
+//     return nameSlice1 + "." + nameSlice2
+// }
+
+// console.log(abbrevName("Sasha Litvinova"))
+
+// Переписанное задание Колей ==>
+
+// function abbrevName(name){
+//     let nameSplit = name.split(' ')
+//     let nameSlice1 = sliceNum(nameSplit, 0)
+//     let nameSlice2 = sliceNum(nameSplit, 1)
+    
+//     return nameSlice1 + "." + nameSlice2
+// }
+
+// function sliceNum(param, index) {
+//     return param.slice(index).toString().charAt(0)
+// }
